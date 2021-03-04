@@ -1,0 +1,55 @@
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ git config --global user.name "j1mmy"
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name.
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ git config --global user.email t3lov3_you@hotmail.com
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ git config --global pull.rebase true
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ ssh-keygen -t rsa -b 4096 -C "t3lov3_you@hotmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/t3lov/.ssh/id_rsa):
+/c/Users/t3lov/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/t3lov/.ssh/id_rsa
+Your public key has been saved in /c/Users/t3lov/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:KoDIDhneEbxmLANunNxZN65FwcnHy4Ht22Mry7Y5fhI t3lov3_you@hotmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|  ..  o.*        |
+|.  ... O =       |
+|* +.+ + = o      |
+|+%.B.  o +       |
+|*o*.  o S o      |
+|o  . . . E +     |
+| .  . .   o o    |
+|     .  .=.o     |
+|        o*B      |
++----[SHA256]-----+
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ clip < ~/.ssh/id_rsa.pub
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ 2 copies the contents of the id_rsa.pub file to your clipboard
+bash: 2: command not found
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ # copies the contents of the id_rsa.pub file to your clipboard
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ 1s -a1 ~/.ssh
+bash: 1s: command not found
+
+t3lov@DESKTOP-54MQ0IH MINGW64 /
+$ ssh -T git@github.com
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+git@github.co
